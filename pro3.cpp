@@ -151,13 +151,10 @@ ostream& operator<<(ostream& os, const func& a){
 C func::fv(C z){
 
     C fz;
-
+    C zn(1,0);
     for(int i=0;i<=deg;i++){
-        C zn(1,0);
-        for(int j=1;j<=i;j++){
-            zn*=z;
-        }
         fz+=(zn*coif[i]);
+        zn*=z;
     }
     return fz;
 }
