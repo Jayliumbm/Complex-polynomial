@@ -166,7 +166,7 @@ int root_num(func f, func df, C center, double radius){
     double dx=radius/1000,dy=radius/1000;
 
     C I;
-    C z(100,100);
+    C z(0,0);
 
     C dz(-dx,0);
     while(x1<x2){//straight line from (x2,y2) to (x1,y2)
