@@ -110,7 +110,12 @@ public:
 };
 
 ostream& operator<<(ostream& os, const C& a){
-    os<<fixed<<setprecision(3)<< a.re<<"+"<<a.im<<"i";
+
+    double r=(abs(a.re)<=0.00049)?0:a.re;
+    double i=(abs(a.im)<=0.00049)?0:a.im;
+
+    os<<fixed<<setprecision(3)<<((r>=0)?" + ":" - ")<<abs(r)<<((i>=0)?" + ":" - ")<<abs(i)<<" i";
+
     return os;
 }
 
