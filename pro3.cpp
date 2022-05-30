@@ -302,5 +302,5 @@ int main () {
         cout<<roots[i]<<endl;
     }
 
-  return 0;
+    return 0;
 }
