@@ -252,8 +252,7 @@ int main () {
     int is_complex;
     cin>>is_complex;
 
-    cout<<"\nPlease enter the degree of your polynomial."<<endl;
-    cout<<"(less than 5 would be better)\n"<<endl;
+    cout<<"\nPlease enter the degree of your polynomial.\n"<<endl;
     int deg;
     cin>>deg;
 
